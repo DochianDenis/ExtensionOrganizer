@@ -19,8 +19,8 @@ if os.path.isdir(directory):
             if not os.path.isdir(check_directory):
                 os.mkdir(check_directory)
                 folders_created += 1
-
-                
+                print("Da")
+                print("Da")
                 
                 
 else:
