@@ -8,8 +8,7 @@ print("""Choose the directory you want to organize:
 3. Desktop
 4. Pictures
 5. Videos
-6. Choose another directory
-""")
+6. Choose another directory""")
 
 option = int(input())
 
