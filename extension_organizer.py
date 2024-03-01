@@ -45,8 +45,6 @@ match option:
         print("The option", option, "does not exist")
 
 
-print(directory)
-
 if os.path.isdir(directory):
     files = os.listdir(directory)
     
@@ -59,12 +57,13 @@ if os.path.isdir(directory):
             continue
         else:
             root, extension = os.path.splitext(file_path)
-            extension_directory = os.path.join(directory, extension)
+            extension_directory = os.path.join(directory, extension[1:])
             if not os.path.isdir(extension_directory):
                 os.mkdir(extension_directory)
                 folders_created += 1
             shutil.move(file_path, extension_directory)
             moved_files += 1
+    print(folders_created,"folders were created and", moved_files," files were moved.")
 
 else:
     print("The directory that you specified does not exist")
