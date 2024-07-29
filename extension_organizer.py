@@ -2,6 +2,8 @@ import os
 import shutil
 from pathlib import Path
 
+# This is a test comment
+
 print("""Choose the directory you want to organize:
 1. Downloads
 2. Documents
