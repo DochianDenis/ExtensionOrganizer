@@ -2,7 +2,7 @@ import os
 import shutil
 from pathlib import Path
 
-# This is a test comment for WSL2
+# Changed
 
 print("""Choose the directory you want to organize:
 1. Downloads
